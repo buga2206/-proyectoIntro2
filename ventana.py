@@ -1,2 +1,2 @@
 def cuentaNUm():
-    pass
+    return 0
