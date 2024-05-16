@@ -5,15 +5,15 @@ import sys
 pygame.init()
 
 # Set the window dimensions
-window_width = 800
-window_height = 800
+window_width = 950
+window_height = 630
 window = pygame.display.set_mode((window_width, window_height))
 
 # Set the title of the window
 pygame.display.set_caption("Matrix of Buttons")
 
 # Load the image for the buttons
-boton_img = pygame.image.load("pixeles/0.png")
+boton_img = pygame.image.load("pixeles/6.png")
 
 # Create a 100x100 matrix
 matriz = [[0 for _ in range(100)] for _ in range(100)]
@@ -39,7 +39,7 @@ while True:
             sys.exit()
 
     # Draw the buttons
-    window.fill((0, 0, 0))  # Clear the window with a black background
+    window.fill((255, 255, 255))  # Clear the window with a white background
     for boton in botones:
         window.blit(boton_img, boton)
 
